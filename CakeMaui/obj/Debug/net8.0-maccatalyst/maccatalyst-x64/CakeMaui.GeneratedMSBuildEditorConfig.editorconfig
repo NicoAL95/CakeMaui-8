@@ -1,0 +1,59 @@
+is_global = true
+build_property.EnableAotAnalyzer = 
+build_property.EnableSingleFileAnalyzer = 
+build_property.EnableTrimAnalyzer = false
+build_property.IncludeAllContentForSelfExtract = 
+build_property.TargetFramework = net8.0-maccatalyst
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = CakeMaui
+build_property.ProjectDir = C:\Nico Abel Laia\Colleges\Semester 5\VisualProgramming\Uas\CakeMaui\CakeMaui\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+
+[C:/Nico Abel Laia/Colleges/Semester 5/VisualProgramming/Uas/CakeMaui/CakeMaui/App.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = CakeMaui.App.xaml
+build_metadata.AdditionalFiles.TargetPath = App.xaml
+build_metadata.AdditionalFiles.RelativePath = App.xaml
+
+[C:/Nico Abel Laia/Colleges/Semester 5/VisualProgramming/Uas/CakeMaui/CakeMaui/AppShell.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = CakeMaui.AppShell.xaml
+build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
+build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
+
+[C:/Nico Abel Laia/Colleges/Semester 5/VisualProgramming/Uas/CakeMaui/CakeMaui/MainPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = CakeMaui.MainPage.xaml
+build_metadata.AdditionalFiles.TargetPath = MainPage.xaml
+build_metadata.AdditionalFiles.RelativePath = MainPage.xaml
+
+[C:/Nico Abel Laia/Colleges/Semester 5/VisualProgramming/Uas/CakeMaui/CakeMaui/Resources/Styles/Colors.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = CakeMaui.Resources.Styles.Colors.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
+
+[C:/Nico Abel Laia/Colleges/Semester 5/VisualProgramming/Uas/CakeMaui/CakeMaui/Resources/Styles/Styles.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = CakeMaui.Resources.Styles.Styles.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
+
+[C:/Nico Abel Laia/Colleges/Semester 5/VisualProgramming/Uas/CakeMaui/CakeMaui/Views/OfficialFormPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = CakeMaui.Views.OfficialFormPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\OfficialFormPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\OfficialFormPage.xaml
+
+[C:/Nico Abel Laia/Colleges/Semester 5/VisualProgramming/Uas/CakeMaui/CakeMaui/Views/OfficialListPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = CakeMaui.Views.OfficialListPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\OfficialListPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\OfficialListPage.xaml
