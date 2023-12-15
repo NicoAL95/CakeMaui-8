@@ -3,49 +3,126 @@
     x:Class="CakeMaui.Views.OfficialFormPage"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    BackgroundColor="White"
     Title="{Binding Name}">
     <ContentPage.Content>
         <ScrollView Margin="20">
             <StackLayout
             Margin="20"
             Spacing="10"
-            VerticalOptions="StartAndExpand">
+            VerticalOptions="StartAndExpand"
+            >
+                <VerticalStackLayout VerticalOptions="CenterAndExpand" Margin="0,0,0,50">
+                    <Image 
+                    Source="logo.png" 
+                    VerticalOptions="CenterAndExpand" 
+                    HorizontalOptions="CenterAndExpand"
+                    WidthRequest="200"
+                    HeightRequest="200"
+                    />
+                    <Label Text="Form Data" FontSize="Large" TextColor="Black" FontAttributes="Bold" HorizontalOptions="Center"  />
+                </VerticalStackLayout>
+                
+                <Grid ColumnSpacing="10">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="50*" />
+                        <ColumnDefinition Width="50*" />
+                    </Grid.ColumnDefinitions>
 
-                <Label Text="Nama calon pengantin pria" />
-                <Entry Text="{Binding Nama_calon_pengantin_pria}" />
+                    <StackLayout Grid.Column="0" Orientation="Vertical" Spacing="15">
+                        <Label Text="Nama Pengantin Pria" TextColor="#605542" FontAttributes="Bold" />
+                        <Entry Text="{Binding Nama_calon_pengantin_pria}" BackgroundColor="#C3C3C3" />
+                    </StackLayout>
 
-                <Label Text="No HP calon pengantin pria" />
-                <Entry Text="{Binding Nohp_calon_pengantin_pria}" />
+                    <StackLayout Grid.Column="1" Orientation="Vertical" Spacing="15">
+                        <Label Text="Telepon Pengantin Pria" TextColor="#605542" FontAttributes="Bold" />
+                        <Entry Text="{Binding Nohp_calon_pengantin_pria}" BackgroundColor="#C3C3C3" />
+                    </StackLayout>
+                </Grid>
 
-                <Label Text="Nama calon pengantin wanita" />
-                <Entry Text="{Binding Nama_calon_pengantin_wanita}" />
+                <Grid ColumnSpacing="10">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="50*" />
+                        <ColumnDefinition Width="50*" />
+                    </Grid.ColumnDefinitions>
 
-                <Label Text="Nohp calon pengantin wanita" />
-                <Entry Text="{Binding Nohp_calon_pengantin_wanita}" />
+                    <StackLayout Grid.Column="0" Orientation="Vertical" Spacing="15">
+                        <Label Text="Nama Pengantin Wanita" TextColor="#605542" FontAttributes="Bold" />
+                        <Entry Text="{Binding Nama_calon_pengantin_wanita}" BackgroundColor="#C3C3C3" />
+                    </StackLayout>
 
-                <Label Text="Tanggal" />
-                <DatePicker x:Name="datePicker" Date="{Binding Tanggal_acara}" />
+                    <StackLayout Grid.Column="1" Orientation="Vertical" Spacing="15">
+                        <Label Text="Telepon Pengantin Wanita" TextColor="#605542" FontAttributes="Bold" />
+                        <Entry Text="{Binding Nohp_calon_pengantin_wanita}" BackgroundColor="#C3C3C3" />
+                    </StackLayout>
+                </Grid>
 
-                <Label Text="Waktu" />
-                <TimePicker Time="{Binding Jam_acara}" />
+                <Grid ColumnSpacing="10">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
 
-                <Label Text="Lokasi" />
-                <Entry Text="{Binding Lokasi}" />
+                    <StackLayout Grid.Column="0" Orientation="Vertical" Spacing="15">
+                        <Label Text="Tanggal" TextColor="#605542" FontAttributes="Bold" />
+                        <DatePicker x:Name="datePicker" Date="{Binding Tanggal_acara}" HorizontalOptions="FillAndExpand" BackgroundColor="#C3C3C3" />
+                    </StackLayout>
 
-                <Label Text="Model cake" />
-                <Entry Text="{Binding Model_cake}" />
+                    <StackLayout Grid.Column="1" Orientation="Vertical" Spacing="15">
+                        <Label Text="Waktu" TextColor="#605542" FontAttributes="Bold" />
+                        <TimePicker Time="{Binding Jam_acara}" HorizontalOptions="FillAndExpand" BackgroundColor="#C3C3C3" />
+                    </StackLayout>
+                    <StackLayout Grid.Column="2" Orientation="Vertical" Spacing="15">
+                        <Label Text="Lokasi" TextColor="#605542" FontAttributes="Bold" />
+                        <Entry Text="{Binding Lokasi}" BackgroundColor="#C3C3C3" />
+                    </StackLayout>
+                </Grid>
 
-                <Label Text="Kue suapan" />
-                <Entry Text="{Binding Kue_suapan}" />
+                <Grid ColumnSpacing="10">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="50*" />
+                        <ColumnDefinition Width="50*" />
+                    </Grid.ColumnDefinitions>
 
-                <Label Text="Kue Family 10 X 10" />
-                <Entry Text="{Binding kue_family_10x10}" />
+                    <StackLayout Grid.Column="0" Orientation="Vertical" Spacing="15">
+                        <Label Text="Model cake" TextColor="#605542" FontAttributes="Bold" />
+                        <Entry Text="{Binding Model_cake}" BackgroundColor="#C3C3C3" />
+                    </StackLayout>
 
-                <Label Text="Mingle" />
-                <Entry Text="{Binding Mingle}" />
+                    <StackLayout Grid.Column="1" Orientation="Vertical" Spacing="15">
+                        <Label Text="Kue suapan" TextColor="#605542" FontAttributes="Bold" />
+                        <Entry Text="{Binding Kue_suapan}" BackgroundColor="#C3C3C3" />
+                    </StackLayout>
+                </Grid>
 
-                <Label Text="Keterangan" />
-                <Entry Text="{Binding Keterangan}" />
+                <Grid ColumnSpacing="10">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="50*" />
+                        <ColumnDefinition Width="50*" />
+                    </Grid.ColumnDefinitions>
+
+                    <StackLayout Grid.Column="0" Orientation="Vertical" Spacing="15">
+                        <Label Text="Kue Family 10 X 10" TextColor="#605542" FontAttributes="Bold" />
+                        <Entry Text="{Binding kue_family_10x10}" BackgroundColor="#C3C3C3" />
+                    </StackLayout>
+
+                    <StackLayout Grid.Column="1" Orientation="Vertical" Spacing="15">
+                        <Label Text="Mingle" TextColor="#605542" FontAttributes="Bold" />
+                        <Entry Text="{Binding Mingle}" BackgroundColor="#C3C3C3" />
+                    </StackLayout>
+                </Grid>
+
+                <Grid ColumnSpacing="10">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+
+                    <StackLayout Grid.Column="1" Orientation="Vertical" Spacing="15">
+                        <Label Text="Keterangan" TextColor="#605542" FontAttributes="Bold" />
+                        <Entry Text="{Binding Keterangan}" BackgroundColor="#C3C3C3" />
+                    </StackLayout>
+                </Grid>
 
 
                 <StackLayout Orientation="Horizontal">
@@ -56,11 +133,33 @@
                     <Switch HorizontalOptions="EndAndExpand" IsToggled="{Binding Done}" />
                 </StackLayout>
 
-                <Button Clicked="OnSaveClicked1" Text="Save" />
+                <Grid ColumnSpacing="10">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="50*" />
+                        <ColumnDefinition Width="50*" />
+                    </Grid.ColumnDefinitions>
 
-                <Button Clicked="OnDeleteClicked1" Text="Delete" />
+                    <Button Grid.Column="0" BackgroundColor="#5897EE" Clicked="OnSaveClicked1" Text="Save" />
+                    <Button Grid.Column="1" BackgroundColor="#E6E6E6" Clicked="OnCancelClicked1" TextColor="Black" Text="Cancel" />
+                </Grid>
 
-                <Button Clicked="OnCancelClicked1" Text="Cancel" />
+                <Grid Margin="0,5,0,0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+
+                    <Button 
+            BackgroundColor="#605542" Clicked="OnDeleteClicked1" Text="Done" />
+                </Grid>
+
+
+                <Grid Margin="0,30,0,0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+
+                    <Button BackgroundColor="#E33437" Clicked="OnDeleteClicked1" Text="Delete" />
+                </Grid>
 
             </StackLayout>
         </ScrollView>

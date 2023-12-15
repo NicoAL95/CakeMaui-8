@@ -1,39 +1,69 @@
-<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage
     x:Class="CakeMaui.Views.OfficialListPage"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    Title="Cake">
-    <ContentPage.ToolbarItems>
-        <ToolbarItem Clicked="OnItemAdded" Text="+">
-            <ToolbarItem.IconImageSource>
-                <OnPlatform x:TypeArguments="ImageSource">
-                    <On Platform="Android,UWP" Value="plus.png" />
-                </OnPlatform>
-            </ToolbarItem.IconImageSource>
-        </ToolbarItem>
-    </ContentPage.ToolbarItems>
+    Title="Cake"
+    BackgroundColor="White">
 
-    <ListView
-        x:Name="listView"
-        Margin="20"
-        ItemSelected="OnListItemSelected">
-        <ListView.ItemTemplate>
-            <DataTemplate>
-                <ViewCell>
-                    <StackLayout
-                        Margin="20,0,0,0"
-                        HorizontalOptions="FillAndExpand"
-                        Orientation="Horizontal">
-                        <Label HorizontalOptions="StartAndExpand" Text="{Binding Nama_calon_pengantin_pria}" />
-                        <Image
-                            HorizontalOptions="End"
-                            IsVisible="{Binding Done}"
-                            Source="check.png" />
-                    </StackLayout>
-                </ViewCell>
-            </DataTemplate>
-        </ListView.ItemTemplate>
-    </ListView>
+    <ScrollView>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
 
+            <VerticalStackLayout VerticalOptions="CenterAndExpand" Margin="0,0,0,30">
+                <Image 
+                    Source="logo.png" 
+                    VerticalOptions="CenterAndExpand" 
+                    HorizontalOptions="CenterAndExpand"
+                    WidthRequest="200"
+                    HeightRequest="200"
+                />
+                <Label Text="List Data Customers" FontSize="Large" TextColor="#605542" FontAttributes="Bold" HorizontalOptions="Center"  />
+                <Button 
+                    Text="Add Data"
+                    FontAttributes="Bold"
+                    Clicked="OnItemAdded"
+                    HorizontalOptions="Center" 
+                    Margin="0,20"
+                    BackgroundColor="#605542"
+                    />
+            </VerticalStackLayout>
+
+            <ListView
+                x:Name="listView"
+                Grid.Row="1"
+                Margin="20"
+                ItemSelected="OnListItemSelected">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout
+                                Margin="0,0,0,10"
+                                HorizontalOptions="FillAndExpand"
+                                Orientation="Horizontal"
+                                Padding="20,10"
+                                BackgroundColor="#C3C3C3">
+                                <Grid ColumnSpacing="10">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="50*" />
+                                        <ColumnDefinition Width="50*" />
+                                    </Grid.ColumnDefinitions>
+
+                                    <StackLayout Grid.Column="0" Orientation="Vertical" Spacing="15">
+                                        <Label Text="{Binding Nama_calon_pengantin_pria}" TextColor="White" FontAttributes="Bold" />
+                                    </StackLayout>
+
+                                    <StackLayout Grid.Column="1" Orientation="Vertical" Spacing="15">
+                                        <Label Text="{Binding Nohp_calon_pengantin_pria}" TextColor="White" FontAttributes="Bold" />
+                                    </StackLayout>
+                                </Grid>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </Grid>
+    </ScrollView>
 </ContentPage>

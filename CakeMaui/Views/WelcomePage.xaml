@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CakeMaui.Views.WelcomePage"
+             BackgroundColor="#fff"
+             >
+    <VerticalStackLayout VerticalOptions="CenterAndExpand">
+        <Image 
+            Source="logo.png" 
+            VerticalOptions="CenterAndExpand" 
+            HorizontalOptions="CenterAndExpand"
+            WidthRequest="250"
+            HeightRequest="250"
+            />
+        <Button 
+            Text="Start Application"
+            FontAttributes="Bold"
+            Clicked="ButtonStart"
+            HorizontalOptions="Center" 
+            Margin="0,20"
+            BackgroundColor="#605542"
+            />
+    </VerticalStackLayout>
+</ContentPage>

@@ -70,9 +70,18 @@
 		<PackageReference Include="SQLitePCLRaw.provider.dynamic_cdecl" Version="2.1.0-pre20220207221914" />
 		<PackageReference Include="SQLitePCLRaw.provider.sqlite3" Version="2.1.0-pre20220207221914" />
 	</ItemGroup>
+
+	<ItemGroup>
+	  <Compile Update="Views\WelcomePage.xaml.cs">
+	    <DependentUpon>WelcomePage.xaml</DependentUpon>
+	  </Compile>
+	</ItemGroup>
 	
 
 	<ItemGroup>
+	  <MauiXaml Update="Views\WelcomePage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="Views\OfficialFormPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
