@@ -129,8 +129,9 @@
                     <Label
                     Margin="0,10"
                     HorizontalOptions="StartAndExpand"
-                    Text="Done" />
-                    <Switch HorizontalOptions="EndAndExpand" IsToggled="{Binding Done}" />
+                    Text="Done"
+                    TextColor="#605542" FontAttributes="Bold"    />
+                    <Switch HorizontalOptions="EndAndExpand" IsToggled="{Binding Done}" BackgroundColor="#C3C3C3" />
                 </StackLayout>
 
                 <Grid ColumnSpacing="10">
@@ -142,16 +143,6 @@
                     <Button Grid.Column="0" BackgroundColor="#5897EE" Clicked="OnSaveClicked1" Text="Save" />
                     <Button Grid.Column="1" BackgroundColor="#E6E6E6" Clicked="OnCancelClicked1" TextColor="Black" Text="Cancel" />
                 </Grid>
-
-                <Grid Margin="0,5,0,0">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="*" />
-                    </Grid.ColumnDefinitions>
-
-                    <Button 
-            BackgroundColor="#605542" Clicked="OnDeleteClicked1" Text="Done" />
-                </Grid>
-
 
                 <Grid Margin="0,30,0,0">
                     <Grid.ColumnDefinitions>
