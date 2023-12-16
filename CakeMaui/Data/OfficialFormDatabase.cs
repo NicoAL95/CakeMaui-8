@@ -1,7 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 using SQLite;
 using CakeMaui.Models;
@@ -22,12 +20,10 @@ namespace CakeMaui.Data
                 }
                 catch (Exception ex)
                 {
-
                     throw;
                 }
                 return instance;
             });
-
 
         public OfficialFormDatabase()
         {
@@ -41,7 +37,7 @@ namespace CakeMaui.Data
 
         public Task<List<OfficialForm>> GetItemsNotDoneAsync()
         {
-            return Database.QueryAsync<OfficialForm>("SELECT * FROM [OfficialForm] WHERE [Done] = 0");
+            return Database.Table<OfficialForm>().Where(form => form.Done == false).ToListAsync();
         }
 
         public Task<OfficialForm> GetItemAsync(int id)
