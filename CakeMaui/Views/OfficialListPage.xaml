@@ -57,7 +57,7 @@
                                     </StackLayout>
 
                                     <StackLayout Grid.Column="1" Orientation="Vertical" Spacing="15">
-                                        <Label Text="{Binding Nohp_calon_pengantin_pria}" TextColor="White" FontAttributes="Bold" />
+                                        <Label Text="{Binding Nama_calon_pengantin_wanita}" TextColor="White" FontAttributes="Bold" />
                                     </StackLayout>
 
                                     <StackLayout Grid.Column="2" Orientation="Vertical" Spacing="15" HorizontalOptions="End">
