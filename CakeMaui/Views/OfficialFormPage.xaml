@@ -3,8 +3,12 @@
     x:Class="CakeMaui.Views.OfficialFormPage"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:viewModels="clr-namespace:CakeMaui.ViewModels;assembly=CakeMaui"
     BackgroundColor="White"
     Title="{Binding Name}">
+    <ContentPage.BindingContext>
+        <viewModels:OfficialFormViewModel />
+    </ContentPage.BindingContext>
     <ContentPage.Content>
         <ScrollView Margin="20">
             <StackLayout
